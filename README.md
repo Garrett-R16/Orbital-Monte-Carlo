@@ -62,3 +62,17 @@ currentSat.name #returns the name of the sat
 currentSat.pos  #returns the position of the sat as a 3 axis vector, in the True Equator Mean Equinox (TEME) Reference Frame
 currentSat.vel  #returns the velocity of the sat as a 3 axis vector, in the TEME Reference Frame
 ```
+
+## Examples
+
+Checkout [the examples folder] for some examples on how I've set up some simulations. Some interesting statistics from stuff I've set up are:
+When using a run length of 365 days, an interval of 5 days, a position uncertainty of 10 km, the same initial date and the number of runs as 85, as above I got the probability of a collision in the next year to be 2.35%. When using the same parameters, but with an exclusion zone of 1 km, a run length of 2 days, and an interval of 1 day, I got the probability of a collision in the next 2 days to be 71.8%.
+
+Keep in mind, the exclusion zones in these simulations aren't realistic to assume sattelites colliding, a more realistic number to use for that case would be 0.01 km (or 10m). These are just examples of some results generated from me experimenting with parameters.
+
+## The Next Steps
+
+- Making the code more efficient
+- Adding debris generation
+- Data analysis tools
+- Machine Learning aspect (?)
