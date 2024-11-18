@@ -29,7 +29,7 @@ class satCarlo:
             
             i += 1
     
-    #peform a run of a specified length and interval, given an initial date
+    #perform a run of a specified length and interval, given an initial date
     def run(self, length, interval, initialDate):
         day = 0
         
@@ -56,7 +56,7 @@ class satCarlo:
         
         return collisions
     
-    #peform a set amount of runs of a specified length and interval, given an initial date
+    #perform a set amount of runs of a specified length and interval, given an initial date
     def monteRuns(self, numRuns, length, interval, initialDate):
         monteArray = []
         

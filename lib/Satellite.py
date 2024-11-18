@@ -1,7 +1,7 @@
 import sgp4.api as sgp
 import random
 
-#Sattelite class allows sats to be grouped together and retain basic info
+#Satellite class allows sats to be grouped together and retain basic info
 class sat:
     #Basic Var inits
     def __init__(self, name, line1, line2):
@@ -32,7 +32,7 @@ class sat:
         else:
             return 0
 
-#parseSats function generates and returns a sattlite list from the given data, assuming the twoline format with names
+#parseSats function generates and returns a satellite list from the given data, assuming the twoline format with names
 def parseSats(fileName):
     file = open(fileName, 'r')
     print("Parsing Sats")
