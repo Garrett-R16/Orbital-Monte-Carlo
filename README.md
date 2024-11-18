@@ -58,7 +58,7 @@ results = carloObj.monteRuns(numRuns, runLength, interval, initialDate)
 When analyzing the specific satellites engaged in collisions, some useful parameters you can look at are:
 
 ``` Ruby
-currentSat.name - returns the name of the sat
-currentSat.pos  - returns the position of the sat as a 3 axis vector, in the True Equator Mean Equinox (TEME) Reference Frame
-currentSat.vel  - returns the velocity of the sat as a 3 axis vector, in the TEME Reference Frame
+currentSat.name #returns the name of the sat
+currentSat.pos  #returns the position of the sat as a 3 axis vector, in the True Equator Mean Equinox (TEME) Reference Frame
+currentSat.vel  #returns the velocity of the sat as a 3 axis vector, in the TEME Reference Frame
 ```
