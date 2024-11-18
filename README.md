@@ -1,10 +1,10 @@
 # Monte Carlo Simulations for Orbital Modeling
 
-This repo contains information on how to use the Monte Carlo Simulation I made to analyze Satellites in orbit. Let's begin with:
+This repo contains information on how to use the Monte Carlo Simulation I made for [Viasat](https://www.viasat.com/) as a part of [The Data Mine](https://datamine.purdue.edu/) to analyze Satellites in orbit. Let's begin with:
 
 ## The Data
 
-The Data should be in the format of TLE data. See the data folder for an example of what that should look like.
+The Data should be in the format of TLE data. See the data folder for an [example of what that should look like](https://github.com/Garrett-R16/Orbital-Monte-Carlo/blob/main/Data/tle_format_example.txt).
 
 ## How to use it
 
@@ -38,7 +38,7 @@ length   = 365 #days
 interval = 1   #days
 initialDate = [2024, 10, 24, 1, 0, 0]
 
-results = carloObj.run(3, 1, initialDate) - r
+results = carloObj.run(3, 1, initialDate)
 ```
 
 #### Multiple Runs (Monte Carlo)
@@ -57,6 +57,8 @@ results = carloObj.monteRuns(numRuns, runLength, interval, initialDate)
 
 When analyzing the specific satellites engaged in collisions, some useful parameters you can look at are:
 
+``` Ruby
 currentSat.name - returns the name of the sat
 currentSat.pos  - returns the position of the sat as a 3 axis vector, in the True Equator Mean Equinox (TEME) Reference Frame
 currentSat.vel  - returns the velocity of the sat as a 3 axis vector, in the TEME Reference Frame
+```
